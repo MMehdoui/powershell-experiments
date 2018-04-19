@@ -1,5 +1,4 @@
-Param($nome)
 
-foreach($nomi in $nome){
-	Write-Host "Ciao $nomi" 
+foreach($nome in $args){
+	Write-Host "Ciao $nome" 
 }
