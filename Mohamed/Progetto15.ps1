@@ -4,7 +4,9 @@ switch($args[0])
 	"U" {$env:username}
 	"L" {Get-ChildItem}
 	"C" {Get-Location}
-	"W" { }
+	"W" {ipConfig | select-string "Indirizzo IPv4"
+		ipConfig | select-string "Subnet Mask"
+		ipConfig | select-string "Gateway Predefinito" }
 	"X" {Get-ChildItem -path C:\Users}
 	"Y" {}
 	"Z" {Test-Connection www.google.com}
