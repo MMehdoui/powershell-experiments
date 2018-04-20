@@ -4,7 +4,7 @@ switch($args[0])
 	"U" {$env:username}
 	"L" {Get-ChildItem}
 	"C" {Get-Location}
-	"W" {Get-WmiObject -Class Win32_PingStatus -Filter "Address='127.0.0.1'" -ComputerName .}
+	"W" { }
 	"X" {Get-ChildItem -path C:\Users}
 	"Y" {}
 	"Z" {Test-Connection www.google.com}
